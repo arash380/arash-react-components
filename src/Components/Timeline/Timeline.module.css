@@ -1,0 +1,13 @@
+.root {
+  overflow-y: scroll;
+  word-wrap: break-word !important;
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.root::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,62 @@
+.root {
+  --timeline-item-margin-bottom: 20px;
+  position: relative;
+  border-left: 6px solid var(--timeline-item-color);
+  padding: 0px 0px 4px 15px;
+  margin: 0px 0px var(--timeline-item-margin-bottom) 45px;
+}
+
+.root p,
+.root h3 {
+  color: var(--primaryColor);
+  margin: 0;
+}
+
+.root span {
+  font-size: 12px !important;
+  color: #aaa2a2 !important;
+  font-weight: 300 !important;
+}
+
+.root h3 {
+  font-size: 16px;
+}
+
+.root p {
+  font-size: 15px;
+}
+
+/* Triangle */
+.root::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 13px 8px 0;
+  border-color: transparent var(--timeline-item-color) transparent transparent;
+}
+
+/* circle */
+.root::after {
+  content: "";
+  position: absolute;
+  left: -45px;
+  top: 10px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--timeline-item-color);
+  box-shadow: 0px 0px 0px 3px var(--whiteColor), 0px 0px 0px 6px #eae1e1;
+}
+
+.line {
+  position: absolute;
+  top: 15px;
+  left: -41px;
+  width: 4px;
+  height: calc(100% + var(--timeline-item-margin-bottom));
+  background-color: #eae1e1;
+}

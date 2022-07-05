@@ -1,0 +1,24 @@
+.root {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+/*
+ Changing the placeholder color 
+*/
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+.root::placeholder {
+  color: var(--input-placeholder-color) !important;
+  opacity: 1 !important; /* Firefox */
+}
+
+/* Internet Explorer 10-11 */
+.root:-ms-input-placeholder {
+  color: var(--input-placeholder-color) !important;
+}
+
+/* Microsoft Edge */
+.root::-ms-input-placeholder {
+  color: var(--input-placeholder-color) !important;
+}

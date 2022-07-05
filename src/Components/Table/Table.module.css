@@ -1,0 +1,69 @@
+.root table {
+  border-collapse: collapse;
+}
+
+.root th {
+  text-align: left;
+  font-weight: 700;
+  font-size: large;
+}
+
+.root thead {
+  border-bottom: var(--borderWidth) solid var(--primaryColor);
+}
+
+.root tbody tr {
+  border-bottom: var(--borderWidth) solid rgba(45, 58, 71, 0.25);
+}
+
+.root tbody tr td:first-child {
+  text-transform: capitalize;
+}
+
+.root th,
+.root td {
+  padding: 1rem;
+}
+
+.bold {
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.alignCenter {
+  text-align: center !important;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.subtitle {
+  display: block;
+  font-weight: 300;
+  font-size: 12px;
+  position: relative;
+  top: 5px;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+}
+
+.iconContainer div {
+  margin-left: 7px;
+}
+
+.icon {
+  color: var(--primaryColor) !important;
+  height: 40px !important;
+  width: 40px !important;
+}
+
+.bottom {
+  margin-bottom: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

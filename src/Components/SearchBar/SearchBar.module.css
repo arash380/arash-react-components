@@ -1,0 +1,21 @@
+.root {
+  --searchbarColor: #ccc;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid var(--searchbarColor);
+  padding: 0px 10px;
+  height: 38px;
+  background-color: var(--whiteColor) !important;
+}
+
+.root input {
+  height: 30px;
+  flex: 1;
+  font-size: 18px;
+}
+
+.icon {
+  font-size: 30px !important;
+  color: var(--searchbarColor) !important;
+}

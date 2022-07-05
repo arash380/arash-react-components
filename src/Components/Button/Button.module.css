@@ -1,0 +1,17 @@
+.root {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-transform: none !important;
+  padding: 10px !important;
+}
+
+.spinner {
+  height: 20px !important;
+  width: 20px !important;
+  color: var(--whiteColor) !important;
+}
+
+.test {
+  background-color: red;
+}

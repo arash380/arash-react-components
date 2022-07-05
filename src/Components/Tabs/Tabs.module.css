@@ -1,0 +1,22 @@
+.root button {
+  color: var(--blackColor) !important;
+  text-transform: none !important;
+  font-size: 18px !important;
+  padding: 0 !important;
+  min-width: 110px !important;
+  margin: 0 var(--tabs-margin) !important;
+  opacity: 1 !important;
+}
+
+[unread-count]::after {
+  content: attr(unread-count);
+  color: var(--whiteColor);
+  background-color: var(--secondaryColor);
+  border-radius: 50%;
+  height: 24px !important;
+  min-width: 24px !important;
+  width: fit-content !important;
+  font-size: 14px;
+  font-weight: normal !important;
+  margin-left: 5px !important;
+}

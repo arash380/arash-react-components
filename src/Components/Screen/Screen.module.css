@@ -1,0 +1,9 @@
+.root {
+  position: absolute;
+  top: calc(var(--navbarHeight) + var(--navbarSpace));
+  left: var(--sidedrawerWidth);
+  width: calc(100% - var(--sidedrawerWidth) - var(--shrunk-width));
+  transition: all 0.5s ease-out;
+  box-sizing: border-box;
+  padding: 0 2.5rem;
+}
