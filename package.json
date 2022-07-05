@@ -1,6 +1,6 @@
 {
   "name": "arash-react-components",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Commonly used react components by Arash Saadati.",
   "main": "index.js",
   "scripts": {
@@ -17,9 +17,9 @@
   },
   "homepage": "https://github.com/arash380/arash-react-components#readme",
   "peerDependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-router-dom": "^5.2.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.18.6",
