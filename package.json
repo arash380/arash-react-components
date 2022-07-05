@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jamesoncSimplexiar/simplexiar_react_components.git"
+    "url": "git+https://github.com/arash380/arash-react-components.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jamesoncSimplexiar/simplexiar_react_components/issues"
+    "url": "https://github.com/arash380/arash-react-components/issues"
   },
-  "homepage": "https://github.com/jamesoncSimplexiar/simplexiar_react_components#readme",
+  "homepage": "https://github.com/arash380/arash-react-components#readme",
   "peerDependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

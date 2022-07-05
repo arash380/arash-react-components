@@ -7,7 +7,7 @@ const input = "src/index.js";
 const config = {
   input,
   output: {
-    name: "simplexiar_react_components",
+    name: "arash-react-components",
     file: "dist/index.js",
     format: "cjs",
     exports: "auto",
