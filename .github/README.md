@@ -1,6 +1,6 @@
 # Arash's React Components
 
-[npm package [TODO]](https://gooogle.ca)
+[npm Package Link](https://www.npmjs.com/package/arash-react-components)
 
 ### `npm i`
 

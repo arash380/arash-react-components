@@ -1,8 +1,0 @@
-.root {
-  height: var(--avatar-size) !important;
-  width: var(--avatar-size) !important;
-  font-size: calc(var(--avatar-size) / 2.5) !important;
-  background-color: var(--avatar-background-color) !important;
-  text-transform: uppercase !important;
-  color: var(--avatar-text-color, #fff) !important;
-}
