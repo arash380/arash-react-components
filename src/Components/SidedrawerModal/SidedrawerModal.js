@@ -26,7 +26,7 @@ const SidedrawerModal = ({
 
   return (
     <>
-      {!isShrinking && <Backdrop show={show} clicked={closeModal} />}
+      {!isShrinking && <Backdrop show={show} onClick={closeModal} />}
       <div
         className={`${classes.root} ${show && classes.show}`}
         style={{

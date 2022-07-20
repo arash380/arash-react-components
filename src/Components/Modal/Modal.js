@@ -5,7 +5,7 @@ import classes from "./Modal.module.css";
 const Modal = ({ show, modalClosed, children, className }) => {
   return (
     <>
-      <Backdrop show={show} clicked={modalClosed} />
+      <Backdrop show={show} onClick={modalClosed} />
       <div
         className={`${classes.Modal} ${className}`}
         style={{

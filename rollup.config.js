@@ -15,6 +15,7 @@ const config = {
   external: [
     "react",
     "react-toastify",
+    "prop-types",
     /@babel\/runtime/,
     // "react-router-dom",
     // "react-custom-scrollbars",

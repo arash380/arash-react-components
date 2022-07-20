@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/arash380/arash-react-components#readme",
   "peerDependencies": {
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-toastify": "^9.0.7"
   },
