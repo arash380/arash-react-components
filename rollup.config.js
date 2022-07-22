@@ -12,20 +12,7 @@ const config = {
     format: "cjs",
     exports: "auto",
   },
-  external: [
-    "react",
-    "react-toastify",
-    "prop-types",
-    /@babel\/runtime/,
-    // "react-router-dom",
-    // "react-custom-scrollbars",
-    // "moment",
-    // "@material-ui/core",
-    // "@material-ui/lab",
-    // "@material-ui/core/styles",
-    // "@material-ui/icons",
-    // "@iconify/react",
-  ],
+  external: ["react", "react-toastify", "prop-types", "@mui/material", /@babel\/runtime/],
   plugins: [
     babel({
       exclude: "node_modules/**",

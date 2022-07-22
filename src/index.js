@@ -1,5 +1,5 @@
 import Backdrop from "./Components/Backdrop/Backdrop";
-// import Button from "./Components/Button/Button";
+import Button from "./Components/Button/Button";
 import Card from "./Components/Card/Card";
 import ConditionalWrapper from "./Components/ConditionalWrapper/ConditionalWrapper";
 import DragAndDrop from "./Components/DragAndDrop/DragAndDrop";
@@ -19,7 +19,7 @@ import Modal from "./Components/Modal/Modal";
 
 const returnLibrary = () => ({
   Backdrop,
-  // Button,
+  Button,
   Card,
   ConditionalWrapper,
   DragAndDrop,
