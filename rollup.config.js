@@ -12,7 +12,7 @@ const config = {
     format: "cjs",
     exports: "auto",
   },
-  external: ["react", "react-toastify", "prop-types", "@mui/material", /@babel\/runtime/],
+  external: ["react", "react-dom", "react-toastify", "prop-types", "@mui/material", /@babel\/runtime/],
   plugins: [
     babel({
       exclude: "node_modules/**",
