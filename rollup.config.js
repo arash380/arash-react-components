@@ -1,6 +1,5 @@
 import babel from "@rollup/plugin-babel";
 import image from "@rollup/plugin-image";
-import alias from "@rollup/plugin-alias";
 import postcss from "rollup-plugin-postcss";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 
