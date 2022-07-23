@@ -1,6 +1,8 @@
 import babel from "@rollup/plugin-babel";
 import image from "@rollup/plugin-image";
+import alias from "@rollup/plugin-alias";
 import postcss from "rollup-plugin-postcss";
+import peerDepsExternal from "rollup-plugin-peer-deps-external";
 
 const input = "src/index.js";
 
@@ -12,7 +14,8 @@ const config = {
     format: "cjs",
     exports: "auto",
   },
-  external: ["react", "react-dom", "react-toastify", "prop-types", "@mui/material", /@babel\/runtime/],
+  // The peerDepsExternal plugin did not detect this package :(
+  external: [/@babel\/runtime/],
   plugins: [
     babel({
       exclude: "node_modules/**",
@@ -23,6 +26,7 @@ const config = {
       modules: true,
     }),
     image(),
+    peerDepsExternal(),
   ],
 };
 
