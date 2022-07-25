@@ -1,6 +1,8 @@
 # Arash's React Components
 
-[NPM Package Link](https://www.npmjs.com/package/arash-react-components)
+Most common React components used by Arash Saadati.
+
+[![NPM](https://miro.medium.com/max/548/1*o474X_2eTiF2Dnn39h6Rjg.jpeg)](https://www.npmjs.com/package/arash-react-components)
 
 ### `npm i`
 
