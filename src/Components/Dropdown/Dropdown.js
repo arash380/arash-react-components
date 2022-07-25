@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, cloneElement } from "react";
 import DropdownItem from "./DropdownItem/DropdownItem";
 import classes from "./Dropdown.module.css";
 
-const Dropdown = ({ children, items, className, show, setShow }) => {
+const Dropdown = ({ ToggleComponent, items, className, show, setShow }) => {
   const dropdownRef = useRef();
 
   // Checks for click outside of the dropdown
@@ -20,7 +20,7 @@ const Dropdown = ({ children, items, className, show, setShow }) => {
 
   return (
     <div ref={dropdownRef}>
-      {children}
+      {cloneElement(ToggleComponent, { onClick: () => setShow((v) => !v) })}
       <div className={`${classes.root} ${show ? "" : classes.hidden} ${className}`}>
         {items.map(({ Icon, iconType, title, onClick, component, isUppercase }, index) => (
           <DropdownItem
@@ -40,16 +40,17 @@ const Dropdown = ({ children, items, className, show, setShow }) => {
 };
 
 Dropdown.propTypes = {
-  children: PropTypes.any,
+  ToggleComponent: PropTypes.any.isRequired,
   className: PropTypes.string,
   items: PropTypes.arrayOf(
     PropTypes.shape({
-      Icon: PropTypes.any,
-      iconType: PropTypes.string,
-      title: PropTypes.string,
-      onClick: PropTypes.func,
-      component: PropTypes.any,
-      isUppercase: PropTypes.bool,
+      IconSrc: DropdownItem.propTypes.IconSrc,
+      component: DropdownItem.propTypes.component,
+      iconType: DropdownItem.propTypes.iconType,
+      isUppercase: DropdownItem.propTypes.isUppercase,
+      onClick: DropdownItem.propTypes.onClick,
+      setShow: DropdownItem.propTypes.setShow,
+      title: DropdownItem.propTypes.title,
     })
   ).isRequired,
   setShow: PropTypes.func,

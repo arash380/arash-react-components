@@ -30,7 +30,7 @@ const DropdownItem = ({ title, IconSrc, onClick, setShow, iconType, component, i
 DropdownItem.propTypes = {
   IconSrc: PropTypes.any,
   component: PropTypes.any,
-  iconType: PropTypes.oneOf[("mui", "iconify")],
+  iconType: PropTypes.oneOf(["mui", "iconify"]),
   isUppercase: PropTypes.bool,
   onClick: PropTypes.func,
   setShow: PropTypes.func,

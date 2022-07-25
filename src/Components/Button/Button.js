@@ -15,9 +15,10 @@ const Button = ({
   if (!isVisible) return null;
   return (
     <MuiButton
-      className={`${classes.root} ${className}`}
+      variant="contained"
       disabled={hasLoader}
       onClick={onClick}
+      className={`${classes.root} ${className}`}
       {...otherProps}
     >
       {hasLoader ? <CircularProgress className={`${classes.spinner} ${loaderClassName}`} /> : children}
