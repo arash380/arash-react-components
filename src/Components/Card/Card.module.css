@@ -14,3 +14,7 @@
   padding-left: 10px;
   margin: 0;
 }
+
+.onClick {
+  cursor: pointer;
+}

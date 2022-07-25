@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 import { DRAG_KEY } from "../Draggable/Draggable";
@@ -78,6 +79,11 @@ const DragAndDrop = ({ children, handleDrop: handleDropExternal }) => {
   ) : (
     children
   );
+};
+
+DragAndDrop.propTypes = {
+  children: PropTypes.any,
+  handleDrop: PropTypes.func,
 };
 
 export default DragAndDrop;
