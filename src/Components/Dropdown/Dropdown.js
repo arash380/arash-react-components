@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React, { useRef, useEffect } from "react";
 import DropdownItem from "./DropdownItem/DropdownItem";
 import classes from "./Dropdown.module.css";
@@ -36,6 +37,23 @@ const Dropdown = ({ children, items, className, show, setShow }) => {
       </div>
     </div>
   );
+};
+
+Dropdown.propTypes = {
+  children: PropTypes.any,
+  className: PropTypes.string,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      Icon: PropTypes.any,
+      iconType: PropTypes.string,
+      title: PropTypes.string,
+      onClick: PropTypes.func,
+      component: PropTypes.any,
+      isUppercase: PropTypes.bool,
+    })
+  ).isRequired,
+  setShow: PropTypes.func,
+  show: PropTypes.bool,
 };
 
 export default Dropdown;

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React from "react";
 import { Icon } from "@iconify/react";
 import classes from "./DropdownItem.module.css";
@@ -24,6 +25,16 @@ const DropdownItem = ({ title, IconSrc, onClick, setShow, iconType, component, i
       {component}
     </div>
   );
+};
+
+DropdownItem.propTypes = {
+  IconSrc: PropTypes.any,
+  component: PropTypes.any,
+  iconType: PropTypes.oneOf[("mui", "iconify")],
+  isUppercase: PropTypes.bool,
+  onClick: PropTypes.func,
+  setShow: PropTypes.func,
+  title: PropTypes.string,
 };
 
 export default DropdownItem;

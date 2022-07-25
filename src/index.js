@@ -4,7 +4,7 @@ import Card from "./Components/Card/Card";
 import ConditionalWrapper from "./Components/ConditionalWrapper/ConditionalWrapper";
 import DragAndDrop from "./Components/DragAndDrop/DragAndDrop";
 import Draggable from "./Components/Draggable/Draggable";
-// import Dropdown from "./Components/Dropdown/Dropdown";
+import Dropdown from "./Components/Dropdown/Dropdown";
 import Input from "./Components/Input/Input";
 import Modal from "./Components/Modal/Modal";
 // import Pagination from "./Components/Pagination/Pagination";
@@ -24,7 +24,7 @@ const returnLibrary = () => ({
   ConditionalWrapper,
   DragAndDrop,
   Draggable,
-  // Dropdown,
+  Dropdown,
   Input,
   Modal,
   // Pagination,
