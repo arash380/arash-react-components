@@ -5,7 +5,7 @@ Most common React components used by Arash Saadati.
 <a href="https://www.npmjs.com/package/arash-react-components"><img src="https://miro.medium.com/max/548/1*o474X_2eTiF2Dnn39h6Rjg.jpeg" alt="NPM Link" height="26.4" width="54.8" ></a>
 
 
-## `Available Commands`
+# `Available Commands`
 
 ### `npm i`
 
@@ -24,15 +24,16 @@ Builds the package and creates the dist folder.
 Publishes the project to npm. You may need to login with npm first (npm login).
 Note: You'll need to increment the project version inside of the package.json file everytime you publish.
 
-## `Examples`
+# `Examples`
 
-#### `DragAndDrop and Draggable Components`
+### DragAndDrop and Draggable Components
 
 ![image](https://user-images.githubusercontent.com/60730507/180859829-a34d6d5b-cb1c-4434-81d2-93bca2ebe976.png)
 ![1](https://user-images.githubusercontent.com/60730507/180862809-8cb6d7cb-d980-4eb8-b6ba-dccaac457f65.gif)
 
+---
 
-#### `Dropdown Component`
+### Dropdown Component
 
 ![image](https://user-images.githubusercontent.com/60730507/180878192-3193ecbd-d32e-4bab-8b91-fb4b93e3d558.png)
 ![1](https://user-images.githubusercontent.com/60730507/180879538-f5e71d65-6fd2-4828-b377-6baec6e1ddaa.gif)
