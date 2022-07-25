@@ -2,7 +2,8 @@
 
 Most common React components used by Arash Saadati.
 
-<img src="https://miro.medium.com/max/548/1*o474X_2eTiF2Dnn39h6Rjg.jpeg" alt="NPM Link" width="20" onclick="window.open("https://www.npmjs.com/package/arash-react-components", "_blank")>
+![NPM Link](https://miro.medium.com/max/548/1*o474X_2eTiF2Dnn39h6Rjg.jpeg)
+<img src="https://miro.medium.com/max/548/1*o474X_2eTiF2Dnn39h6Rjg.jpeg" width="20" onclick="window.open("https://www.npmjs.com/package/arash-react-components", "_blank")>
 
 ## `Available Commands`
 
