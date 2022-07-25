@@ -1,6 +1,6 @@
 {
   "name": "arash-react-components",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Commonly used react components by Arash Saadati.",
   "main": "index.js",
   "watch": {
