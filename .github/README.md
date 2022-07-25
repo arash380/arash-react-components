@@ -20,5 +20,4 @@ Note: You'll need to increment the project version inside of the package.json fi
 
 #### `DragAndDrop and Draggable Usage`
 ![image](https://user-images.githubusercontent.com/60730507/180859829-a34d6d5b-cb1c-4434-81d2-93bca2ebe976.png)
-https://user-images.githubusercontent.com/60730507/180861601-90234ed8-fe72-480b-bd30-048f71b07b8d.mp4
-
+![1](https://user-images.githubusercontent.com/60730507/180862809-8cb6d7cb-d980-4eb8-b6ba-dccaac457f65.gif)
