@@ -37,3 +37,10 @@ Note: You'll need to increment the project version inside of the package.json fi
 
 ![image](https://user-images.githubusercontent.com/60730507/180878192-3193ecbd-d32e-4bab-8b91-fb4b93e3d558.png)
 ![1](https://user-images.githubusercontent.com/60730507/180879538-f5e71d65-6fd2-4828-b377-6baec6e1ddaa.gif)
+
+---
+
+### Switch Component
+
+![image](https://user-images.githubusercontent.com/60730507/181122698-2e46fd42-ebf4-471a-94ce-a067fb864e09.png)
+
