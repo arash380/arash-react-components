@@ -10,7 +10,7 @@ import Modal from "./Components/Modal/Modal";
 // import Pagination from "./Components/Pagination/Pagination";
 import SearchBar from "./Components/SearchBar/SearchBar";
 import SidedrawerModal from "./Components/SidedrawerModal/SidedrawerModal";
-// import Switch from "./Components/Switch/Switch";
+import Switch from "./Components/Switch/Switch";
 // import Table from "./Components/Table/Table";
 // import Tabs from "./Components/Tabs/Tabs";
 // import TextArea from "./Components/TextArea/TextArea";
@@ -29,7 +29,7 @@ const returnLibrary = () => ({
   // Pagination,
   SearchBar,
   SidedrawerModal,
-  // Switch,
+  Switch,
   // Table,
   // Tabs,
   // TextArea,

@@ -1,31 +1,39 @@
 import React from "react";
-import { makeStyles, Switch as MuiSwitch } from "@material-ui/core";
-import colors from "../../config/colors";
+import classes from "./Switch.module.css";
 
-const Switch = ({ color = colors.primary, disabled, className, ...props }) => {
-  const useStyles = makeStyles(() => ({
-    root: {
-      "& .Mui-checked": {
-        color: color,
-      },
-      "& .Mui-checked + .MuiSwitch-track": {
-        backgroundColor: color,
-      },
-    },
-  }));
-  const classes = useStyles();
+// TODO: colors
+const DEFAULT_DETAILS = [
+  {
+    text: "Enabled",
+    color: "#f57b20",
+  },
+  {
+    text: "Disabled",
+    color: "#2d3a47",
+  },
+];
 
-  return (
-    <MuiSwitch
-      className={className}
-      classes={{
-        root: classes.root,
-      }}
-      color={!disabled ? "primary" : "default"}
-      disabled={disabled}
-      {...props}
-    />
-  );
-};
+const Switch = ({
+  checked,
+  onChange,
+  details = DEFAULT_DETAILS,
+  thumbColor = "white",
+  disabled,
+  className,
+  ...otherProps
+}) => (
+  <div
+    className={`${classes.root} ${!checked && classes.inactive} ${disabled && classes.disabled} ${className}`}
+    onClick={() => onChange(disabled ? checked : !checked)}
+    style={{
+      "--switch-main-color": DEFAULT_DETAILS[checked ? 0 : 1].color,
+      "--switch-thumb-color": thumbColor,
+    }}
+    {...otherProps}
+  >
+    <span>{DEFAULT_DETAILS[checked ? 0 : 1].text}</span>
+    <div className={classes.thumb} />
+  </div>
+);
 
 export default Switch;
