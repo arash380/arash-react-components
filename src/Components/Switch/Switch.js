@@ -1,15 +1,16 @@
+import PropTypes from "prop-types";
 import React from "react";
 import classes from "./Switch.module.css";
 
 // TODO: colors
 const DEFAULT_DETAILS = [
   {
-    text: "Enabled",
     color: "#f57b20",
+    text: "Enabled",
   },
   {
-    text: "Disabled",
     color: "#2d3a47",
+    text: "Disabled",
   },
 ];
 
@@ -35,5 +36,19 @@ const Switch = ({
     <div className={classes.thumb} />
   </div>
 );
+
+Switch.propTypes = {
+  checked: PropTypes.bool,
+  className: PropTypes.any,
+  details: PropTypes.arrayOf(
+    PropTypes.shape({
+      color: PropTypes.string,
+      text: PropTypes.string,
+    })
+  ),
+  disabled: PropTypes.any,
+  onChange: PropTypes.func,
+  thumbColor: PropTypes.string,
+};
 
 export default Switch;
