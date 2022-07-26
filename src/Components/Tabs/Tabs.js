@@ -3,6 +3,7 @@ import { Tabs as MuiTabs, Tab, makeStyles } from "@material-ui/core";
 import colors from "../../config/colors";
 import classes from "./Tabs.module.css";
 
+// If unread count is above 10, show 10+
 const Tabs = ({
   labels,
   onChange,

@@ -1,6 +1,6 @@
 .root {
   width: fit-content;
-  background-color: var(--whiteColor);
+  background-color: white;
   padding: 1rem 2rem;
   border-radius: 20px;
   box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1);

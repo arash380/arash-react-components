@@ -6,7 +6,7 @@
   border: 1px solid var(--searchbarColor);
   padding: 0px 10px;
   height: 38px;
-  background-color: var(--whiteColor) !important;
+  background-color: white;
 }
 
 .root input {
@@ -16,6 +16,6 @@
 }
 
 .icon {
-  font-size: 30px !important;
-  color: var(--searchbarColor) !important;
+  font-size: 30px;
+  color: var(--searchbarColor);
 }

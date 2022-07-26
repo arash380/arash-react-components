@@ -9,11 +9,11 @@
 }
 
 .root thead {
-  border-bottom: var(--borderWidth) solid var(--primaryColor);
+  border-bottom: 2px solid #000;
 }
 
 .root tbody tr {
-  border-bottom: var(--borderWidth) solid rgba(45, 58, 71, 0.25);
+  border-bottom: 2px solid rgba(45, 58, 71, 0.25);
 }
 
 .root tbody tr td:first-child {
@@ -56,9 +56,8 @@
 }
 
 .icon {
-  color: var(--primaryColor) !important;
-  height: 40px !important;
-  width: 40px !important;
+  height: 40px;
+  width: 40px;
 }
 
 .bottom {

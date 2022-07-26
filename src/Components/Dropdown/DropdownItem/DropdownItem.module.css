@@ -1,7 +1,6 @@
 .root {
   display: flex;
   align-items: center;
-  color: var(--primaryColor);
   margin: 3px;
 }
 
@@ -10,12 +9,10 @@
 }
 
 .muiIcon {
-  color: var(--primaryColor) !important;
-  font-size: 30px !important;
+  font-size: 30px;
 }
 
 .iconifyIcon {
-  color: var(--primaryColor) !important;
-  height: 30px !important;
-  width: 30px !important;
+  height: 30px;
+  width: 30px;
 }
