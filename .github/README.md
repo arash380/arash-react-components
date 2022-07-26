@@ -43,4 +43,4 @@ Note: You'll need to increment the project version inside of the package.json fi
 ### Switch Component
 
 ![image](https://user-images.githubusercontent.com/60730507/181122698-2e46fd42-ebf4-471a-94ce-a067fb864e09.png)
-
+![1](https://user-images.githubusercontent.com/60730507/181123333-51b84e56-b4ab-4e63-8554-0d9aa14d5d62.gif)
