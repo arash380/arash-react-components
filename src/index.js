@@ -8,8 +8,7 @@ import Dropdown from "./Components/Dropdown/Dropdown";
 import Input from "./Components/Input/Input";
 import Modal from "./Components/Modal/Modal";
 // import Pagination from "./Components/Pagination/Pagination";
-// import ProtectedRoute from "./Components/ProtectedRoute/ProtectedRoute";
-// import SearchBar from "./Components/SearchBar/SearchBar";
+import SearchBar from "./Components/SearchBar/SearchBar";
 // import SidedrawerModal from "./Components/SidedrawerModal/SidedrawerModal";
 // import Switch from "./Components/Switch/Switch";
 // import Table from "./Components/Table/Table";
@@ -28,8 +27,7 @@ const returnLibrary = () => ({
   Input,
   Modal,
   // Pagination,
-  // ProtectedRoute,
-  // SearchBar,
+  SearchBar,
   // SidedrawerModal,
   // Switch,
   // Table,

@@ -1,5 +1,6 @@
 .root {
   --searchbarColor: #ccc;
+
   display: flex;
   align-items: center;
   border-radius: 20px;
@@ -7,6 +8,7 @@
   padding: 0px 10px;
   height: 38px;
   background-color: white;
+  width: fit-content;
 }
 
 .root input {
@@ -16,6 +18,13 @@
 }
 
 .icon {
-  font-size: 30px;
-  color: var(--searchbarColor);
+  font-size: 20px;
+  color: white;
+
+  /* TODO: color should come from outside
+  Maybe a theme so that we can use it for every component */
+  background-color: lightblue;
+  padding: 0.37rem;
+  border-radius: 50%;
+  cursor: pointer;
 }
