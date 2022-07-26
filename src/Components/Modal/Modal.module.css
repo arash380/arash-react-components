@@ -1,4 +1,4 @@
-.Modal {
+.root {
   position: fixed;
   z-index: 500;
   background-color: white;
@@ -12,10 +12,15 @@
   transition: all 0.3s ease-out;
   max-height: 55%;
   overflow-y: auto;
+  display: flex;
+}
+
+.root > div:first-child {
+  flex: 1;
 }
 
 @media (min-width: 600px) {
-  .Modal {
+  .root {
     width: 500px;
     left: calc(50% - 250px);
   }

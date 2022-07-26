@@ -1,19 +1,21 @@
 import PropTypes from "prop-types";
 import React from "react";
 import Backdrop from "../Backdrop/Backdrop";
+import { Icon } from "@iconify/react";
 import classes from "./Modal.module.css";
 
-const Modal = ({ show, closeModal, hasBackdrop = true, children, className }) => (
+const Modal = ({ show, closeModal, hasCloseButton = true, hasBackdrop = true, children, className }) => (
   <>
     {hasBackdrop && <Backdrop show={show} onClick={closeModal} />}
     <div
-      className={`${classes.Modal} ${className}`}
+      className={`${classes.root} ${className}`}
       style={{
         transform: show ? "translateY(0)" : "translateY(-100vh)",
         opacity: show ? "1" : "0",
       }}
     >
-      {children}
+      <div>{children}</div>
+      {hasCloseButton && <Icon icon="ci:close-big" width="35" cursor="pointer" onClick={closeModal} />}
     </div>
   </>
 );
@@ -23,6 +25,7 @@ Modal.propTypes = {
   className: PropTypes.any,
   closeModal: PropTypes.func,
   hasBackdrop: PropTypes.bool,
+  hasCloseButton: PropTypes.bool,
   show: PropTypes.bool,
 };
 
