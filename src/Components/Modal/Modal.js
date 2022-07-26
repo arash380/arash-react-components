@@ -15,7 +15,7 @@ const Modal = ({ show, closeModal, hasCloseButton = true, hasBackdrop = true, ch
       }}
     >
       <div>{children}</div>
-      {hasCloseButton && <Icon icon="ci:close-big" width="35" cursor="pointer" onClick={closeModal} />}
+      {hasCloseButton && <Icon icon="ci:close-big" className={classes.closeButton} onClick={closeModal} />}
     </div>
   </>
 );

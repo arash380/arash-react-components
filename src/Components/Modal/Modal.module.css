@@ -19,6 +19,11 @@
   flex: 1;
 }
 
+.closeButton {
+  font-size: 35px;
+  cursor: pointer;
+}
+
 @media (min-width: 600px) {
   .root {
     width: 500px;

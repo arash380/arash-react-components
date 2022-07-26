@@ -1,9 +1,9 @@
 .root {
   position: fixed;
-  z-index: 500;
+  z-index: 1500;
   background-color: white;
   box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1);
-  padding: var(--sidedrawer-modal-padding);
+  padding: 27px;
   top: 0;
   bottom: 0;
   right: 0;
@@ -12,6 +12,7 @@
   transition: all 0.5s ease-out;
   transform: translateX(100vw);
   opacity: 0;
+  overflow-y: auto;
 }
 
 .show {
@@ -19,36 +20,7 @@
   opacity: 1;
 }
 
-.closeIcon {
-  font-size: 42px;
+.closeButton {
+  font-size: 40px;
   cursor: pointer;
-  position: relative;
-  left: -9px;
-  top: -9px;
-}
-
-.shrinkContainer {
-  background-color: white;
-  position: absolute;
-  top: 25%;
-  width: 100px;
-  height: 100px;
-  border-radius: 50% 0;
-  cursor: pointer;
-  transform: translateX(-50%) rotate(-0.125turn);
-  z-index: -1;
-  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1);
-}
-
-.shrinkIcon {
-  font-size: 42px;
-  transform: rotate(0.125turn);
-  position: relative;
-  top: 12px;
-  left: 12px;
-  transition: all 0.4s ease-out;
-}
-
-.rotate {
-  transform: rotate(0.625turn);
 }
