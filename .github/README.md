@@ -26,8 +26,22 @@ Note: You'll need to increment the project version inside of the package.json fi
 
 # `Component List`
 
-* test1
-* test2
+* Backdrop
+* Button
+* Card
+* ConditionalWrapper
+* DragAndDrop
+* Draggable
+* Dropdown
+* Input
+* Modal
+* SearchBar
+* SidedrawerModal
+* Switch
+* Table
+* Tabs
+* TextArea
+* Timeline
 
 # `Examples`
 *** Examples are only provided for complicated components. ***
