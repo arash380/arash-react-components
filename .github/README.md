@@ -21,10 +21,30 @@ Builds the package and creates the dist folder.
 
 ### `npm publish`
 
-Publishes the project to npm. You may need to login with npm first (npm login).
+Publishes the project to npm. You may need to login with npm first (npm login). You'll need permission to be able to publish any changes.
 Note: You'll need to increment the project version inside of the package.json file everytime you publish.
 
+# `Component List`
+
+* Backdrop
+* Button
+* Card
+* ConditionalWrapper
+* DragAndDrop
+* Draggable
+* Dropdown
+* Input
+* Modal
+* SearchBar
+* SidedrawerModal
+* Switch
+* Table
+* Tabs
+* TextArea
+* Timeline
+
 # `Examples`
+*** Examples are only provided for complicated components. ***
 
 ### DragAndDrop and Draggable Components
 
