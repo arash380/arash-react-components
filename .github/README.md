@@ -24,6 +24,11 @@ Builds the package and creates the dist folder.
 Publishes the project to npm. You may need to login with npm first (npm login).
 Note: You'll need to increment the project version inside of the package.json file everytime you publish.
 
+# `Component List`
+
+* test1
+* test2
+
 # `Examples`
 *** Examples are only provided for complicated components. ***
 
