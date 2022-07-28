@@ -60,6 +60,13 @@ Note: You'll need to increment the project version inside of the package.json fi
 
 ---
 
+### SidedrawerModal Component
+
+![image](https://user-images.githubusercontent.com/60730507/181646080-e1a9a6a1-2db2-434d-8b04-9afcbe8d6092.png)
+
+
+---
+
 ### Switch Component
 
 ![image](https://user-images.githubusercontent.com/60730507/181122698-2e46fd42-ebf4-471a-94ce-a067fb864e09.png)
