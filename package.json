@@ -1,7 +1,7 @@
 {
   "name": "arash-react-components",
   "version": "1.0.15",
-  "description": "Commonly used react components by Arash Saadati.",
+  "description": "React component library which includes most used components by Arash Saadati.",
   "main": "index.js",
   "watch": {
     "build": {
