@@ -25,7 +25,7 @@ Publishes the project to npm. You may need to login with npm first (npm login).
 Note: You'll need to increment the project version inside of the package.json file everytime you publish.
 
 # `Examples`
-*** Examples are only provided for complicated components.
+*** Examples are only provided for complicated components. ***
 
 ### DragAndDrop and Draggable Components
 
