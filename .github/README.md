@@ -1,6 +1,6 @@
 # Arash's React Components
 
-Most common React components used by Arash Saadati.
+React component library which includes most used components by Arash Saadati.
 
 <a href="https://www.npmjs.com/package/arash-react-components"><img src="https://miro.medium.com/max/548/1*o474X_2eTiF2Dnn39h6Rjg.jpeg" alt="NPM Link" height="26.4" width="54.8" ></a>
 
