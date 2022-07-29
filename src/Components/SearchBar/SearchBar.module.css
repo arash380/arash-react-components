@@ -1,10 +1,8 @@
 .root {
-  --searchbarColor: #ccc;
-
   display: flex;
   align-items: center;
   border-radius: 20px;
-  border: 1px solid var(--searchbarColor);
+  border: 1px solid #ccc;
   padding: 0px 10px;
   height: 38px;
   background-color: #fff;
