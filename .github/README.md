@@ -58,7 +58,7 @@ You need to wrap your whole react project around the ThemeProvider inside the in
 
 # `Examples`
 
-**_ Examples are only provided for complicated components. _**
+*** Examples are only provided for complicated components. ***
 
 ### DragAndDrop and Draggable Components
 
