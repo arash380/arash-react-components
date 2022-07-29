@@ -3,7 +3,7 @@ import React from "react";
 import { Icon } from "@iconify/react";
 // import Scrollbars from "react-custom-scrollbars";
 // import ConditionalWrapper from "../ConditionalWrapper/ConditionalWrapper";
-import { accessObjectProperty } from "../../utils/helperFunctions";
+import { accessObjectProperty } from "../../utils/helpers";
 import classes from "./Table.module.css";
 
 const Table = ({

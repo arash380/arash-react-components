@@ -35,6 +35,13 @@
 
 ---
 
+### SidedrawerModal Component
+
+![image](https://user-images.githubusercontent.com/60730507/181646080-e1a9a6a1-2db2-434d-8b04-9afcbe8d6092.png)
+![1](https://user-images.githubusercontent.com/60730507/181646740-bb10bf6c-8b09-416d-841e-9d3119ca2aaf.gif)
+
+---
+
 ### Switch Component
 
 ![image](https://user-images.githubusercontent.com/60730507/181122698-2e46fd42-ebf4-471a-94ce-a067fb864e09.png)

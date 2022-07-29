@@ -2,7 +2,7 @@ import Backdrop from "./Components/Backdrop/Backdrop";
 import Button from "./Components/Button/Button";
 import Card from "./Components/Card/Card";
 import ConditionalWrapper from "./Components/ConditionalWrapper/ConditionalWrapper";
-import { TABLE_DEFAULT_RETURN_VALUE, TABLE_WILD_CARD_SRC } from "./utils/helperFunctions";
+import { TABLE_DEFAULT_RETURN_VALUE, TABLE_WILD_CARD_SRC } from "./utils/helpers";
 import DragAndDrop from "./Components/DragAndDrop/DragAndDrop";
 import Draggable from "./Components/Draggable/Draggable";
 import Dropdown from "./Components/Dropdown/Dropdown";
