@@ -29,7 +29,7 @@ Note: You'll need to bump the package version inside of the package.json file to
 
 # `Usage`
 
-You need to wrap your whole react project around the ThemeProvider inside the index.js file. You can override the default theme by:
+You need to wrap your whole react project around the ThemeProvider inside the index.js file. You can override the default theme by going over the folowing steps:
   1. Importing the DEFAULT_THEME
   2. Using object destructuring to make the necessary changes
   3. Passing the new theme to ThemeProvider
