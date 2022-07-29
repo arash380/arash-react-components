@@ -69,3 +69,11 @@
 ![image](https://user-images.githubusercontent.com/60730507/181673643-ed185514-128b-4012-80dc-87632312d86d.png)
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/60730507/181673947-412da3cd-9ccf-440a-b8d2-6e134f18e04d.gif)
+
+---
+
+### Timeline Component
+
+![image](https://user-images.githubusercontent.com/60730507/181837349-92d16c97-e9a1-4fda-a32b-cff09b8dc7da.png)
+
+![image](https://user-images.githubusercontent.com/60730507/181837361-269493e4-9c25-43a7-b246-a1e88073e7a9.png)
