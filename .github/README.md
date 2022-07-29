@@ -71,3 +71,12 @@ Note: You'll need to increment the project version inside of the package.json fi
 
 ![image](https://user-images.githubusercontent.com/60730507/181122698-2e46fd42-ebf4-471a-94ce-a067fb864e09.png)
 ![1](https://user-images.githubusercontent.com/60730507/181123333-51b84e56-b4ab-4e63-8554-0d9aa14d5d62.gif)
+
+---
+
+### Table Component
+
+![image](https://user-images.githubusercontent.com/60730507/181669050-ae5e7549-4b9e-48c2-9da7-e30eedaf757b.png)
+![image](https://user-images.githubusercontent.com/60730507/181669092-7afa37b6-dbd3-4b6f-b0c3-7fff27a2e098.png)
+![image](https://user-images.githubusercontent.com/60730507/181669118-0a8cdcd4-ed49-4729-8624-92f1346e61ce.png)
+![image](https://user-images.githubusercontent.com/60730507/181669140-f71a2c02-a8c8-4f24-bdb1-e4c9d7b7f299.png)
