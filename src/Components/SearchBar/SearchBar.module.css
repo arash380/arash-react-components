@@ -7,7 +7,7 @@
   border: 1px solid var(--searchbarColor);
   padding: 0px 10px;
   height: 38px;
-  background-color: white;
+  background-color: #fff;
   width: fit-content;
 }
 
@@ -19,7 +19,7 @@
 
 .icon {
   font-size: 20px;
-  color: white;
+  color: #fff;
 
   /* TODO: color should come from outside
   Maybe a theme so that we can use it for every component */

@@ -1,46 +1,63 @@
+import PropTypes from "prop-types";
 import React from "react";
-import { Tabs as MuiTabs, Tab, makeStyles } from "@material-ui/core";
-import colors from "../../config/colors";
+import { Tabs as MuiTabs, Tab } from "@mui/material";
 import classes from "./Tabs.module.css";
 
-// If unread count is above 10, show 10+
+const NUMBER_THRESHOLD = 9;
+
 const Tabs = ({
-  labels,
+  tabs,
   onChange,
   value,
   margin = "0px",
-  activeBarHeight = "3",
-  activeBarColor = colors.primary,
+  activeBarHeight = "4px",
+  activeBarColor = "#000",
   className,
   ...otherProps
 }) => {
-  const useStyles = makeStyles(() => ({
-    root: {
-      "& .Mui-selected": {
-        fontWeight: "bolder",
-      },
-    },
-    indicator: {
-      backgroundColor: activeBarColor,
-      height: `${activeBarHeight}px`,
-    },
-  }));
-  const tabsClasses = useStyles();
+  const _onchange = (_, newVal) => {
+    if (newVal === value) return;
+    onChange(newVal);
+  };
 
   return (
     <MuiTabs
       value={value}
       className={`${classes.root} ${className}`}
-      onChange={onChange}
+      onChange={_onchange}
       {...otherProps}
-      style={{ "--tabs-margin": margin }}
-      classes={{ root: tabsClasses.root, indicator: tabsClasses.indicator }}
+      classes={{ indicator: classes.indicator }}
+      style={{
+        "--tabs-margin": margin,
+        "--tabs-bar-clr": activeBarColor,
+        "--tabs-bar-height": activeBarHeight,
+      }}
     >
-      {labels.map(({ title, unread }) => (
-        <Tab label={title} key={title} unread-count={unread === 0 ? null : unread} />
+      {tabs.map(({ title, number }) => (
+        <Tab
+          label={title}
+          key={title}
+          classes={{ selected: classes.selected }}
+          tab-number={number < 0 ? null : number > NUMBER_THRESHOLD ? `${NUMBER_THRESHOLD}+` : number}
+        />
       ))}
     </MuiTabs>
   );
+};
+
+Tabs.propTypes = {
+  activeBarColor: PropTypes.string,
+  activeBarHeight: PropTypes.string,
+  className: PropTypes.any,
+  margin: PropTypes.string,
+  onChange: PropTypes.func,
+  tabs: PropTypes.arrayOf(
+    PropTypes.shape({
+      number: PropTypes.number,
+      title: PropTypes.string,
+    })
+  ).isRequired,
+  value: PropTypes.any,
 };
 
 export default Tabs;

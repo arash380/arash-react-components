@@ -1,22 +1,36 @@
 .root button {
-  color: black;
-  text-transform: none;
-  font-size: 18px;
-  padding: 0;
-  min-width: 110px;
-  margin: 0 var(--tabs-margin);
-  opacity: 1;
+  color: #000 !important;
+  text-transform: none !important;
+  font-size: 18px !important;
+  padding: 0 !important;
+  min-width: 110px !important;
+  margin: 0 var(--tabs-margin) !important;
+  opacity: 1 !important;
+
+  display: flex !important;
+  flex-direction: row !important;
 }
 
-[unread-count]::after {
-  content: attr(unread-count);
-  color: white;
-  background-color: var(--secondaryColor);
-  border-radius: 50%;
-  height: 24px;
-  min-width: 24px;
-  width: fit-content;
-  font-size: 14px;
-  font-weight: normal;
-  margin-left: 5px;
+.selected {
+  font-weight: bolder;
+}
+
+.indicator {
+  background-color: var(--tabs-bar-clr);
+  height: var(--tabs-bar-height);
+}
+
+[tab-number]::after {
+  content: attr(tab-number) !important;
+  color: #fff !important;
+  background-color: #f57b20 !important;
+  border-radius: 50% !important;
+  height: 24px !important;
+  width: 24px !important;
+  font-size: 12px !important;
+  font-weight: normal !important;
+  margin-left: 5px !important;
+
+  display: grid !important;
+  place-items: center !important;
 }

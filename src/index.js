@@ -13,7 +13,7 @@ import SearchBar from "./Components/SearchBar/SearchBar";
 import SidedrawerModal from "./Components/SidedrawerModal/SidedrawerModal";
 import Switch from "./Components/Switch/Switch";
 import Table from "./Components/Table/Table";
-// import Tabs from "./Components/Tabs/Tabs";
+import Tabs from "./Components/Tabs/Tabs";
 // import TextArea from "./Components/TextArea/TextArea";
 // import Timeline from "./Components/Timeline/Timeline";
 
@@ -34,7 +34,7 @@ const returnLibrary = () => ({
   Table,
   TABLE_DEFAULT_RETURN_VALUE,
   TABLE_WILD_CARD_SRC,
-  // Tabs,
+  Tabs,
   // TextArea,
   // Timeline,
 });

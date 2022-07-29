@@ -18,7 +18,7 @@ const Switch = ({
   checked,
   onChange,
   details = DEFAULT_DETAILS,
-  thumbColor = "white",
+  thumbColor = "#fff",
   disabled,
   className,
   ...otherProps
