@@ -61,3 +61,11 @@
 ![image](https://user-images.githubusercontent.com/60730507/181669118-0a8cdcd4-ed49-4729-8624-92f1346e61ce.png)
 
 ![image](https://user-images.githubusercontent.com/60730507/181669140-f71a2c02-a8c8-4f24-bdb1-e4c9d7b7f299.png)
+
+---
+
+### Tabs Component
+
+![image](https://user-images.githubusercontent.com/60730507/181673643-ed185514-128b-4012-80dc-87632312d86d.png)
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/60730507/181673947-412da3cd-9ccf-440a-b8d2-6e134f18e04d.gif)
