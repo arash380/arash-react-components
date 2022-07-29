@@ -1,5 +1,6 @@
-.root table {
+.root {
   border-collapse: collapse;
+  width: 100%;
 }
 
 .root th {
@@ -34,8 +35,9 @@
   text-align: center !important;
 }
 
-.clickable {
+.clickable:hover {
   cursor: pointer;
+  opacity: 0.5;
 }
 
 .subtitle {
@@ -58,11 +60,4 @@
 .icon {
   height: 40px;
   width: 40px;
-}
-
-.bottom {
-  margin-bottom: -10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }

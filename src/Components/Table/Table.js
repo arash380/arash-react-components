@@ -1,79 +1,64 @@
+import PropTypes from "prop-types";
 import React from "react";
-import Pagination from "../Pagination/Pagination";
 import { Icon } from "@iconify/react";
-import Scrollbars from "react-custom-scrollbars";
-import ConditionalWrapper from "../ConditionalWrapper/ConditionalWrapper";
+// import Scrollbars from "react-custom-scrollbars";
+// import ConditionalWrapper from "../ConditionalWrapper/ConditionalWrapper";
 import { accessObjectProperty } from "../../utils/helperFunctions";
 import classes from "./Table.module.css";
 
 const Table = ({
   data,
-  pagination,
-  headers,
+  schema,
   uniqueIdSrc,
-  onClick,
+  onRowClick,
   isLoading,
-  onPageChange,
   isScrollable,
   scrollHeight,
   className,
 }) => {
   const getHeaders = () => {
-    return headers.map(({ name, alignCenter }, index) => (
-      <th key={index} className={alignCenter && classes.alignCenter}>
+    return schema.map(({ name, alignCenter }, i) => (
+      <th key={i} className={alignCenter && classes.alignCenter}>
         {name}
       </th>
     ));
   };
 
-  const getTableData = () => {
+  const getFormattedData = () => {
     return data.map((row) => (
       <tr
         key={accessObjectProperty(row, uniqueIdSrc)}
-        className={onClick && classes.clickable}
-        onClick={() => onClick && onClick(accessObjectProperty(row, uniqueIdSrc))}
+        className={onRowClick && classes.clickable}
+        onClick={() => onRowClick && onRowClick(accessObjectProperty(row, uniqueIdSrc))}
       >
-        {headers.map(({ formatter, bold, source, subtitle, icon, alignCenter }, index) => {
+        {schema.map(({ formatter, bold, source, subtitle, icon, alignCenter }, i) => {
           let result = formatter
             ? formatter(accessObjectProperty(row, source))
             : accessObjectProperty(row, source);
 
-          if (icon) {
-            return (
-              <td
-                className={`${bold && classes.bold} ${classes.iconContainer} ${
-                  alignCenter && classes.alignCenter
-                }`}
-                key={index}
-              >
+          return (
+            <td
+              className={`${bold && classes.bold} ${alignCenter && classes.alignCenter} ${
+                icon && classes.iconContainer
+              }`}
+              key={i}
+            >
+              {icon && (
                 <Icon
                   className={classes.icon}
                   icon={icon.formatter(accessObjectProperty(row, icon.source))}
                 />
-                <div>
-                  {result}
-                  {subtitle && (
-                    <span className={classes.subtitle}>
-                      {subtitle.formatter
-                        ? subtitle.formatter(accessObjectProperty(row, subtitle.source))
-                        : accessObjectProperty(row, subtitle.source)}
-                    </span>
-                  )}
-                </div>
-              </td>
-            );
-          }
-
-          return (
-            <td className={`${bold && classes.bold} ${alignCenter && classes.alignCenter}`} key={index}>
-              {result}
-              {subtitle ? (
-                <span className={classes.subtitle}>
-                  {subtitle.formatter
-                    ? subtitle.formatter(accessObjectProperty(row, subtitle.source))
-                    : accessObjectProperty(row, subtitle.source)}
-                </span>
-              ) : null}
+              )}
+              <div>
+                {result}
+                {subtitle && (
+                  <span className={classes.subtitle}>
+                    {subtitle.formatter
+                      ? subtitle.formatter(accessObjectProperty(row, subtitle.source))
+                      : accessObjectProperty(row, subtitle.source)}
+                  </span>
+                )}
+              </div>
             </td>
           );
         })}
@@ -83,39 +68,50 @@ const Table = ({
 
   return (
     !isLoading && (
-      <div className={classes.root}>
-        <ConditionalWrapper
-          condition={isScrollable}
-          wrapper={(children) => (
-            <Scrollbars style={scrollHeight ? { height: scrollHeight } : {}} autoHide>
-              {children}
-            </Scrollbars>
-          )}
-        >
-          <table className={className}>
-            <thead>
-              <tr>{getHeaders()}</tr>
-            </thead>
-            <tbody>{getTableData()}</tbody>
-          </table>
-        </ConditionalWrapper>
-
-        {pagination && (
-          <div className={classes.bottom}>
-            <p>
-              Showing {pagination.startingPoint} to {pagination.endingPoint} of {pagination.totalElements}{" "}
-              tickets
-            </p>
-            <Pagination
-              initialPage={pagination.pageNumber}
-              totalPages={pagination.totalPages}
-              onPageChange={onPageChange}
-            />
-          </div>
-        )}
-      </div>
+      // <ConditionalWrapper
+      //   condition={isScrollable}
+      //   wrapper={(children) => (
+      //     <Scrollbars style={scrollHeight ? { height: scrollHeight } : {}} autoHide>
+      //       {children}
+      //     </Scrollbars>
+      //   )}
+      // >
+      <table className={`${classes.root} ${className}`}>
+        <thead>
+          <tr>{getHeaders()}</tr>
+        </thead>
+        <tbody>{getFormattedData()}</tbody>
+      </table>
+      // </ConditionalWrapper>
     )
   );
+};
+
+Table.propTypes = {
+  className: PropTypes.any,
+  data: PropTypes.array.isRequired,
+  isLoading: PropTypes.bool,
+  isScrollable: PropTypes.bool,
+  onRowClick: PropTypes.func,
+  schema: PropTypes.arrayOf(
+    PropTypes.shape({
+      alignCenter: PropTypes.bool,
+      bold: PropTypes.bool,
+      formatter: PropTypes.func,
+      icon: PropTypes.shape({
+        formatter: PropTypes.func,
+        source: PropTypes.string,
+      }),
+      name: PropTypes.string,
+      source: PropTypes.string,
+      subtitle: PropTypes.shape({
+        formatter: PropTypes.func,
+        source: PropTypes.string,
+      }),
+    })
+  ).isRequired,
+  scrollHeight: PropTypes.string,
+  uniqueIdSrc: PropTypes.string.isRequired,
 };
 
 export default Table;
