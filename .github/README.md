@@ -27,6 +27,15 @@ Bumps the package version.
 Publishes the project to npm. You may need to login with npm first (npm login). You'll need permission to be able to publish any changes.
 Note: You'll need to bump the package version inside of the package.json file to be able to publish.
 
+# `Usage`
+
+You need to wrap your whole react project around the ThemeProvider inside the index.js file. You can override the default theme by:
+  1. Importing the DEFAULT_THEME
+  2. Using object destructuring to make the necessary changes
+  3. Passing the new theme to ThemeProvider
+
+![image](https://user-images.githubusercontent.com/60730507/181849767-907cf5a5-2c69-4d24-a114-05266efc17a0.png)
+
 # `Component List`
 
 - Backdrop
