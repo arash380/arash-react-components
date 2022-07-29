@@ -6,7 +6,7 @@ import classes from "./Button.module.css";
 const Button = ({
   children,
   onClick,
-  hasLoader = false,
+  loading,
   className,
   loaderClassName,
   isVisible = true,
@@ -16,12 +16,12 @@ const Button = ({
   return (
     <MuiButton
       variant="contained"
-      disabled={hasLoader}
+      disabled={loading}
       onClick={onClick}
       className={`${classes.root} ${className}`}
       {...otherProps}
     >
-      {hasLoader ? <CircularProgress className={`${classes.spinner} ${loaderClassName}`} /> : children}
+      {loading ? <CircularProgress className={`${classes.spinner} ${loaderClassName}`} /> : children}
     </MuiButton>
   );
 };
@@ -29,9 +29,9 @@ const Button = ({
 Button.propTypes = {
   children: PropTypes.any,
   className: PropTypes.any,
-  hasLoader: PropTypes.bool,
   isVisible: PropTypes.bool,
   loaderClassName: PropTypes.any,
+  loading: PropTypes.bool,
   onClick: PropTypes.func,
 };
 

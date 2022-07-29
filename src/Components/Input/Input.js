@@ -1,11 +1,12 @@
 import PropTypes from "prop-types";
 import React from "react";
+import { DEFAULT_THEME } from "../ThemeProvider/ThemeProvider";
 import classes from "./Input.module.css";
 
 const Input = ({
   placeholder,
-  placeholderColor = "#989898",
-  onTextChange,
+  placeholderColor = DEFAULT_THEME.colors.placeholder,
+  onTextChange = () => {},
   handleEnter,
   className,
   ...otherProps

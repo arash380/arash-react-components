@@ -1,8 +1,15 @@
 import PropTypes from "prop-types";
 import React from "react";
+import { DEFAULT_THEME } from "../ThemeProvider/ThemeProvider";
 import classes from "./TextArea.module.css";
 
-const TextArea = ({ placeholder, placeholderColor = "#989898", className, onTextChange, ...otherProps }) => (
+const TextArea = ({
+  placeholder,
+  placeholderColor = DEFAULT_THEME.colors.placeholder,
+  className,
+  onTextChange = () => {},
+  ...otherProps
+}) => (
   <textarea
     className={`${classes.root} ${className}`}
     placeholder={placeholder}

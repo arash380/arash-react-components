@@ -1,15 +1,15 @@
 import PropTypes from "prop-types";
 import React from "react";
+import { DEFAULT_THEME } from "../ThemeProvider/ThemeProvider";
 import classes from "./Switch.module.css";
 
-// TODO: colors
 const DEFAULT_DETAILS = [
   {
-    color: "#f57b20",
+    color: DEFAULT_THEME.colors.secondary,
     text: "Enabled",
   },
   {
-    color: "#2d3a47",
+    color: DEFAULT_THEME.colors.primary,
     text: "Disabled",
   },
 ];
@@ -18,7 +18,7 @@ const Switch = ({
   checked,
   onChange,
   details = DEFAULT_DETAILS,
-  thumbColor = "#fff",
+  thumbColor = DEFAULT_THEME.colors.white,
   disabled,
   className,
   ...otherProps

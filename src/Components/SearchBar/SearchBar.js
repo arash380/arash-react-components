@@ -10,7 +10,6 @@ const SearchBar = ({ type = "text", placeholder, onTextChange, handleEnter, clas
       type={type}
       placeholder={placeholder}
       onTextChange={onTextChange}
-      placeholderColor="#aaa"
       handleEnter={handleEnter}
       {...otherProps}
     />

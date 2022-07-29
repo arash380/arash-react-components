@@ -2,10 +2,10 @@
   display: flex;
   align-items: center;
   border-radius: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--arash-border-clr);
   padding: 0px 10px;
   height: 38px;
-  background-color: #fff;
+  background-color: var(--arash-white-clr);
   width: fit-content;
 }
 
@@ -17,11 +17,8 @@
 
 .icon {
   font-size: 20px;
-  color: #fff;
-
-  /* TODO: color should come from outside
-  Maybe a theme so that we can use it for every component */
-  background-color: lightblue;
+  color: var(--arash-white-clr);
+  background-color: var(--arash-primary-clr);
   padding: 0.37rem;
   border-radius: 50%;
   cursor: pointer;

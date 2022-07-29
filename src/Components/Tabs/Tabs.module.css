@@ -1,5 +1,5 @@
 .root button {
-  color: #000 !important;
+  color: var(--tabs-bar-clr) !important;
   text-transform: none !important;
   font-size: 18px !important;
   padding: 0 !important;
@@ -22,8 +22,8 @@
 
 [tab-number]::after {
   content: attr(tab-number) !important;
-  color: #fff !important;
-  background-color: #f57b20 !important;
+  color: var(--arash-white-clr) !important;
+  background-color: var(--arash-secondary-clr) !important;
   border-radius: 50% !important;
   height: 24px !important;
   width: 24px !important;

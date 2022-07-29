@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 import { Tabs as MuiTabs, Tab } from "@mui/material";
+import { DEFAULT_THEME } from "../ThemeProvider/ThemeProvider";
 import classes from "./Tabs.module.css";
 
 const NUMBER_THRESHOLD = 9;
@@ -11,7 +12,7 @@ const Tabs = ({
   value,
   margin = "0px",
   activeBarHeight = "4px",
-  activeBarColor = "#000",
+  activeBarColor = DEFAULT_THEME.colors.primary,
   className,
   ...otherProps
 }) => {

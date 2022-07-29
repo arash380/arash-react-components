@@ -10,11 +10,11 @@
 }
 
 .root thead {
-  border-bottom: 2px solid #000;
+  border-bottom: var(--arash-border-sz) solid var(--arash-black-clr);
 }
 
 .root tbody tr {
-  border-bottom: 2px solid rgba(45, 58, 71, 0.25);
+  border-bottom: var(--arash-border-sz) solid rgba(45, 58, 71, 0.25);
 }
 
 .root tbody tr td:first-child {

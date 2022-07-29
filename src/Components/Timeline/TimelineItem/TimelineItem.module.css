@@ -9,13 +9,13 @@
 
 .root p,
 .root h3 {
-  color: #000;
+  color: var(--arash-black-clr);
   margin: 0;
 }
 
 .root span {
   font-size: 12px !important;
-  color: #aaa2a2 !important;
+  color: var(--arash-placeholder-clr) !important;
   font-weight: 300 !important;
 }
 
@@ -50,7 +50,7 @@
   height: 12px;
   border-radius: 50%;
   background-color: var(--timeline-item-color);
-  box-shadow: 0px 0px 0px 3px #fff, 0px 0px 0px 6px #eae1e1;
+  box-shadow: 0px 0px 0px 3px var(--arash-white-clr), 0px 0px 0px 6px #eae1e1;
 }
 
 .line {
