@@ -18,10 +18,14 @@ Watches for changes in the src directory and runs the build command when a file 
 
 Builds the package and creates the dist folder.
 
+### `npm version [<newversion> | major | minor | patch]`
+
+Bumps the package version.
+
 ### `npm publish`
 
 Publishes the project to npm. You may need to login with npm first (npm login). You'll need permission to be able to publish any changes.
-Note: You'll need to increment the project version inside of the package.json file everytime you publish.
+Note: You'll need to bump the package version inside of the package.json file to be able to publish.
 
 # `Component List`
 
