@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import React, { useEffect } from "react";
-import { ThemeProvider as MUIThemeProvider, createTheme } from "@mui/material/styles";
+import { ThemeProvider as MUIThemeProvider, createTheme, StyledEngineProvider } from "@mui/material/styles";
 
 // --backgroundColor: #fbfbfb;
 // --whiteColor: #fff;
@@ -50,16 +50,18 @@ const ThemeProvider = ({ children, theme }) => {
   }, []);
 
   return (
-    <MUIThemeProvider
-      theme={createTheme({
-        palette: {
-          primary: { main: thm.colors.primary },
-          secondary: { main: thm.colors.secondary },
-        },
-      })}
-    >
-      {children}
-    </MUIThemeProvider>
+    <StyledEngineProvider injectFirst>
+      <MUIThemeProvider
+        theme={createTheme({
+          palette: {
+            primary: { main: thm.colors.primary },
+            secondary: { main: thm.colors.secondary },
+          },
+        })}
+      >
+        {children}
+      </MUIThemeProvider>
+    </StyledEngineProvider>
   );
 };
 
