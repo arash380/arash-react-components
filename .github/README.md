@@ -4,7 +4,6 @@ React component library which includes most used components by Arash Saadati.
 
 <a href="https://www.npmjs.com/package/arash-react-components"><img src="https://miro.medium.com/max/548/1*o474X_2eTiF2Dnn39h6Rjg.jpeg" alt="NPM Link" height="26.4" width="54.8" ></a>
 
-
 # `Available Commands`
 
 ### `npm i`
@@ -26,25 +25,26 @@ Note: You'll need to increment the project version inside of the package.json fi
 
 # `Component List`
 
-* Backdrop
-* Button
-* Card
-* ConditionalWrapper
-* DragAndDrop
-* Draggable
-* Dropdown
-* Input
-* Modal
-* SearchBar
-* SidedrawerModal
-* Switch
-* Table
-* Tabs
-* TextArea
-* Timeline
+- Backdrop
+- Button
+- Card
+- ConditionalWrapper
+- DragAndDrop
+- Draggable
+- Dropdown
+- Input
+- Modal
+- SearchBar
+- SidedrawerModal
+- Switch
+- Table
+- Tabs
+- TextArea
+- Timeline
 
 # `Examples`
-*** Examples are only provided for complicated components. ***
+
+**_ Examples are only provided for complicated components. _**
 
 ### DragAndDrop and Draggable Components
 
