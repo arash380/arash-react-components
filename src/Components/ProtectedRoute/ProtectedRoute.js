@@ -1,22 +1,15 @@
 import PropTypes from "prop-types";
 import { Navigate, Outlet } from "react-router-dom";
 
-const ProtectedRoute = ({
-  isAuthenticated,
-  reverseCheck,
-  loading,
-  AppLoader,
-  defaultRoute = "/",
-  notAuthRoute,
-}) => {
+const ProtectedRoute = ({ authenticated, reverse, loading, AppLoader, defaultRoute = "/", alterRoute }) => {
   if (loading && AppLoader) return <AppLoader />;
 
-  if (reverseCheck && isAuthenticated) {
+  if (reverse && authenticated) {
     return <Navigate to={defaultRoute} />;
   }
 
-  if (!reverseCheck && !isAuthenticated) {
-    return <Navigate to={notAuthRoute} />;
+  if (!reverse && !authenticated) {
+    return <Navigate to={alterRoute} />;
   }
 
   return <Outlet />;
@@ -25,10 +18,10 @@ const ProtectedRoute = ({
 ProtectedRoute.propTypes = {
   AppLoader: PropTypes.any,
   defaultRoute: PropTypes.string,
-  isAuthenticated: PropTypes.bool,
+  authenticated: PropTypes.bool,
   loading: PropTypes.bool,
-  notAuthRoute: PropTypes.string,
-  reverseCheck: PropTypes.bool,
+  alterRoute: PropTypes.string,
+  reverse: PropTypes.bool,
 };
 
 export default ProtectedRoute;
