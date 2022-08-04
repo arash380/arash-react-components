@@ -8,7 +8,6 @@ import Draggable from "./Components/Draggable/Draggable";
 import Dropdown from "./Components/Dropdown/Dropdown";
 import Input from "./Components/Input/Input";
 import Modal from "./Components/Modal/Modal";
-import ProtectedRoute from "./Components/ProtectedRoute/ProtectedRoute";
 import SearchBar from "./Components/SearchBar/SearchBar";
 import SidedrawerModal from "./Components/SidedrawerModal/SidedrawerModal";
 import Switch from "./Components/Switch/Switch";
@@ -29,7 +28,6 @@ const returnLibrary = () => ({
   Dropdown,
   Input,
   Modal,
-  ProtectedRoute,
   SearchBar,
   SidedrawerModal,
   Switch,
