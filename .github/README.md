@@ -48,7 +48,6 @@ You need to wrap your whole react project around the ThemeProvider inside the in
 - Dropdown
 - Input
 - Modal
-- ProtectedRoute
 - SearchBar
 - SidedrawerModal
 - Switch
