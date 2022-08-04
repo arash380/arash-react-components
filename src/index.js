@@ -1,3 +1,4 @@
+import AppLoader from "./Components/AppLoader/AppLoader";
 import Backdrop from "./Components/Backdrop/Backdrop";
 import Button from "./Components/Button/Button";
 import Card from "./Components/Card/Card";
@@ -18,6 +19,7 @@ import ThemeProvider, { DEFAULT_THEME } from "./Components/ThemeProvider/ThemePr
 import Timeline from "./Components/Timeline/Timeline";
 
 const returnLibrary = () => ({
+  AppLoader,
   Backdrop,
   Button,
   Card,

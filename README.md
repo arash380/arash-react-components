@@ -10,6 +10,7 @@ You need to wrap your whole react project around the ThemeProvider inside the in
 
 # `Component List`
 
+- AppLoader
 - Backdrop
 - Button
 - Card
