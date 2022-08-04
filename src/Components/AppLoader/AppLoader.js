@@ -1,3 +1,4 @@
+import React from "react";
 import { PropagateLoader } from "react-spinners";
 import { DEFAULT_THEME } from "../ThemeProvider/ThemeProvider";
 import classes from "./AppLoader.module.css";
