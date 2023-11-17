@@ -3,8 +3,6 @@ import React, { useEffect } from "react";
 import { ThemeProvider as MUIThemeProvider, createTheme, StyledEngineProvider } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
 
-// --backgroundColor: #fbfbfb;
-// --whiteColor: #fff;
 // --successColor: #4bb543;
 // --statusResolvedColor: #5f9936;
 // --statusResolvedBackgroundColor: #ebf2e6;
@@ -29,6 +27,7 @@ export const DEFAULT_THEME = {
     black: "#000",
     placeholder: "#989898",
     border: "#ccc",
+    bg: "#fbfbfb",
   },
   sizes: {
     border: "2px",
