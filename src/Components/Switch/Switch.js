@@ -27,12 +27,12 @@ const Switch = ({
     className={`${classes.root} ${!checked && classes.inactive} ${disabled && classes.disabled} ${className}`}
     onClick={() => onChange(disabled ? checked : !checked)}
     style={{
-      "--switch-main-color": DEFAULT_DETAILS[checked ? 0 : 1].color,
+      "--switch-main-color": details[checked ? 0 : 1].color,
       "--switch-thumb-color": thumbColor,
     }}
     {...otherProps}
   >
-    <span>{DEFAULT_DETAILS[checked ? 0 : 1].text}</span>
+    <span>{details[checked ? 0 : 1].text}</span>
     <div className={classes.thumb} />
   </div>
 );
