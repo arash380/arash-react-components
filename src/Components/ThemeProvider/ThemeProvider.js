@@ -52,9 +52,9 @@ const ThemeProvider = ({ children, theme }) => {
   const thm = theme ? theme : DEFAULT_THEME;
 
   useEffect(() => {
-    thm.colors.black = DEFAULT_THEME.colors[`${val ? "white" : "black"}-f`];
-    thm.colors.white = DEFAULT_THEME.colors[`${val ? "black" : "white"}-f`];
-    thm.colors.bg = DEFAULT_THEME.colors[`bg-${val ? "dark" : "light"}`];
+    thm.colors.black = DEFAULT_THEME.colors[`${darkMode ? "white" : "black"}-f`];
+    thm.colors.white = DEFAULT_THEME.colors[`${darkMode ? "black" : "white"}-f`];
+    thm.colors.bg = DEFAULT_THEME.colors[`bg-${darkMode ? "dark" : "light"}`];
 
     Object.keys(thm.colors).forEach((k) => {
       rootElement.style.setProperty(CSS_PREFIX_CLR.replace(PLACEHOLDER, k), thm.colors[k]);
