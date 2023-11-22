@@ -15,7 +15,7 @@ import Switch from "./Components/Switch/Switch";
 import Table from "./Components/Table/Table";
 import Tabs from "./Components/Tabs/Tabs";
 import TextArea from "./Components/TextArea/TextArea";
-import ThemeProvider, { DEFAULT_THEME } from "./Components/ThemeProvider/ThemeProvider";
+import ThemeProvider, { DEFAULT_THEME, useDarkMode } from "./Components/ThemeProvider/ThemeProvider";
 import Timeline from "./Components/Timeline/Timeline";
 
 const returnLibrary = () => ({
@@ -39,6 +39,7 @@ const returnLibrary = () => ({
   Tabs,
   TextArea,
   ThemeProvider,
+  useDarkMode,
   Timeline,
 });
 
