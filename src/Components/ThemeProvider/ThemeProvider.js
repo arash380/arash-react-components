@@ -17,6 +17,8 @@ import { CssBaseline } from "@mui/material";
 const PLACEHOLDER = "AAA";
 const CSS_PREFIX_CLR = `--arash-${PLACEHOLDER}-clr`;
 const CSS_PREFIX_SZ = `--arash-${PLACEHOLDER}-sz`;
+const DARK_MODE_KEY = "arash-dark-mode";
+const rootElement = document.querySelector(":root");
 
 export const DEFAULT_THEME = {
   colors: {
@@ -46,11 +48,13 @@ export const useDarkMode = () => {
 };
 
 const ThemeProvider = ({ children, theme }) => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(localStorage.getItem(DARK_MODE_KEY) === "true");
   const thm = theme ? theme : DEFAULT_THEME;
 
   useEffect(() => {
-    const rootElement = document.querySelector(":root");
+    thm.colors.black = DEFAULT_THEME.colors[`${val ? "white" : "black"}-f`];
+    thm.colors.white = DEFAULT_THEME.colors[`${val ? "black" : "white"}-f`];
+    thm.colors.bg = DEFAULT_THEME.colors[`bg-${val ? "dark" : "light"}`];
 
     Object.keys(thm.colors).forEach((k) => {
       rootElement.style.setProperty(CSS_PREFIX_CLR.replace(PLACEHOLDER, k), thm.colors[k]);
@@ -59,19 +63,12 @@ const ThemeProvider = ({ children, theme }) => {
     Object.keys(thm.sizes).forEach((k) => {
       rootElement.style.setProperty(CSS_PREFIX_SZ.replace(PLACEHOLDER, k), thm.sizes[k]);
     });
+
+    localStorage.setItem(DARK_MODE_KEY, darkMode);
   }, [darkMode]);
 
-  const toggleDarkMode = () => {
-    // Using the prev value of the dark mode here because set state takes some time
-    thm.colors.black = DEFAULT_THEME.colors[`${darkMode ? "black" : "white"}-f`];
-    thm.colors.white = DEFAULT_THEME.colors[`${darkMode ? "white" : "black"}-f`];
-    thm.colors.bg = DEFAULT_THEME.colors[`bg-${darkMode ? "light" : "dark"}`];
-
-    setDarkMode((v) => !v);
-  };
-
   return (
-    <DarkModeContext.Provider value={{ darkMode, toggleDarkMode }}>
+    <DarkModeContext.Provider value={{ darkMode, setDarkMode }}>
       <MUIThemeProvider
         theme={createTheme({
           palette: {
