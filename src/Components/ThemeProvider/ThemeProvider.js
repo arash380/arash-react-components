@@ -59,7 +59,7 @@ const ThemeProvider = ({ children, theme }) => {
     Object.keys(thm.sizes).forEach((k) => {
       rootElement.style.setProperty(CSS_PREFIX_SZ.replace(PLACEHOLDER, k), thm.sizes[k]);
     });
-  }, [thm.colors]);
+  }, [darkMode]);
 
   const toggleDarkMode = () => {
     setDarkMode((v) => !v);
