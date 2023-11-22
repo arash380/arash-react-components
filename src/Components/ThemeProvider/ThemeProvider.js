@@ -28,6 +28,9 @@ export const DEFAULT_THEME = {
     placeholder: "#989898",
     border: "#ccc",
     bg: "#fbfbfb",
+    // Fixed colors will changed during mode change
+    "white-f": "#fff",
+    "black-f": "#000",
   },
   sizes: {
     border: "2px",
