@@ -14,22 +14,11 @@ const DEFAULT_DETAILS = [
   },
 ];
 
-const Switch = ({
-  checked,
-  onChange,
-  details = DEFAULT_DETAILS,
-  thumbColor = DEFAULT_THEME.colors.white,
-  disabled,
-  className,
-  ...otherProps
-}) => (
+const Switch = ({ checked, onChange, details = DEFAULT_DETAILS, disabled, className, ...otherProps }) => (
   <div
     className={`${classes.root} ${!checked && classes.inactive} ${disabled && classes.disabled} ${className}`}
     onClick={() => onChange(disabled ? checked : !checked)}
-    style={{
-      "--switch-main-color": details[checked ? 0 : 1].color,
-      "--switch-thumb-color": thumbColor,
-    }}
+    style={{ "--switch-main-color": details[checked ? 0 : 1].color }}
     {...otherProps}
   >
     <span>{details[checked ? 0 : 1].text}</span>
@@ -48,7 +37,6 @@ Switch.propTypes = {
   ),
   disabled: PropTypes.any,
   onChange: PropTypes.func,
-  thumbColor: PropTypes.string,
 };
 
 export default Switch;
