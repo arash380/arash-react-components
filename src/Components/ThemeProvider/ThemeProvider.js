@@ -62,10 +62,12 @@ const ThemeProvider = ({ children, theme }) => {
   }, [darkMode]);
 
   const toggleDarkMode = () => {
+    // Using the prev value of the dark mode here because set state takes some time
+    thm.colors.black = DEFAULT_THEME.colors[`${darkMode ? "black" : "white"}-f`];
+    thm.colors.white = DEFAULT_THEME.colors[`${darkMode ? "white" : "black"}-f`];
+    thm.colors.bg = DEFAULT_THEME.colors[`bg-${darkMode ? "light" : "dark"}`];
+
     setDarkMode((v) => !v);
-    thm.colors.black = DEFAULT_THEME.colors[`${darkMode ? "white" : "black"}-f`];
-    thm.colors.white = DEFAULT_THEME.colors[`${darkMode ? "black" : "white"}-f`];
-    thm.colors.bg = DEFAULT_THEME.colors[`bg-${darkMode ? "dark" : "light"}`];
   };
 
   return (
