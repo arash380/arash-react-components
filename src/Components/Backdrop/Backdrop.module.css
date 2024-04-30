@@ -2,7 +2,7 @@
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: 1500;
+  z-index: 500;
   left: 0;
   top: 0;
   background-color: var(--arash-black-clr);
