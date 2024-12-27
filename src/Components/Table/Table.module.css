@@ -48,13 +48,18 @@
   top: 5px;
 }
 
-.iconContainer {
+.iconContainer,
+.afterIconContainer {
   display: flex;
   align-items: center;
 }
 
 .iconContainer div {
   margin-left: 7px;
+}
+
+.afterIconContainer div {
+  margin-right: 7px;
 }
 
 .icon {

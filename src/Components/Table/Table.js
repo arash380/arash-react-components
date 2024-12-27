@@ -39,11 +39,11 @@ const Table = ({
           return (
             <td
               className={`${bold && classes.bold} ${alignCenter && classes.alignCenter} ${
-                icon && classes.iconContainer
+                icon ? (icon.after ? classes.afterIconContainer : classes.iconContainer) : ""
               }`}
               key={i}
             >
-              {icon && (
+              {icon && !icon.after && (
                 <Icon
                   className={classes.icon}
                   icon={icon.formatter(accessObjectProperty(row, icon.source))}
@@ -59,6 +59,12 @@ const Table = ({
                   </span>
                 )}
               </div>
+              {icon && icon.after && (
+                <Icon
+                  className={classes.icon}
+                  icon={icon.formatter(accessObjectProperty(row, icon.source))}
+                />
+              )}
             </td>
           );
         })}
@@ -101,6 +107,7 @@ Table.propTypes = {
       icon: PropTypes.shape({
         formatter: PropTypes.func,
         source: PropTypes.string,
+        after: PropTypes.bool,
       }),
       name: PropTypes.string,
       source: PropTypes.string,
