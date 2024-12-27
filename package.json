@@ -1,6 +1,6 @@
 {
   "name": "arash-react-components",
-  "version": "1.4.6",
+  "version": "1.4.7",
   "description": "React component library which includes most used components by Arash Saadati.",
   "main": "index.js",
   "watch": {
