@@ -12,8 +12,9 @@ const Table = ({
   uniqueIdSrc,
   onRowClick,
   isLoading,
-  isScrollable,
-  scrollHeight,
+  // isScrollable,
+  // scrollHeight,
+  highlightedRowId,
   className,
 }) => {
   const getHeaders = () => {
@@ -28,7 +29,9 @@ const Table = ({
     return data.map((row) => (
       <tr
         key={accessObjectProperty(row, uniqueIdSrc)}
-        className={onRowClick && classes.clickable}
+        className={`${onRowClick && classes.clickable} ${
+          accessObjectProperty(row, uniqueIdSrc) === highlightedRowId && classes.highlightedRow
+        }`}
         onClick={() => onRowClick && onRowClick(accessObjectProperty(row, uniqueIdSrc))}
       >
         {schema.map(({ formatter, bold, source, subtitle, icon, alignCenter }, i) => {
@@ -97,7 +100,7 @@ Table.propTypes = {
   className: PropTypes.any,
   data: PropTypes.array.isRequired,
   isLoading: PropTypes.bool,
-  isScrollable: PropTypes.bool,
+  // isScrollable: PropTypes.bool,
   onRowClick: PropTypes.func,
   schema: PropTypes.arrayOf(
     PropTypes.shape({
@@ -117,8 +120,9 @@ Table.propTypes = {
       }),
     })
   ).isRequired,
-  scrollHeight: PropTypes.string,
+  // scrollHeight: PropTypes.string,
   uniqueIdSrc: PropTypes.string.isRequired,
+  highlightedRowId: PropTypes.string,
 };
 
 export default Table;

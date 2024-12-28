@@ -66,3 +66,7 @@
   height: 40px;
   width: 40px;
 }
+
+.highlightedRow {
+  background-color: rgba(0, 0, 0, 0.1);
+}
